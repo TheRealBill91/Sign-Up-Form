@@ -14,10 +14,10 @@
 
 .side-container-img img {
     height: 100vh;
-    width: 30%;
+    width: 35%;
     object-fit: cover;
     object-position: center;
-    background-size: 30%;
+    background-size: 35%;
     outline: 6px solid red;
     flex: 1;
 
@@ -30,15 +30,16 @@
     gap: 6px;
     justify-content: flex-start;
     outline: 4px solid green;
-    background-color: rgb(203, 203, 203);
-    width: 70%;
+    background-color: rgb(255, 255, 255);
+    width: 65%;
+    height: 100vh;
     align-items: center;
 }
 
 .signUp-Marketing-Phrase {
     width: 70%;
     line-height: auto;
-    margin-top: 80px;
+    margin-top: 32px;
     font-family: "Norse-Bold", sans-serif;
     font-size: 1.6rem;
     align-self: flex-start;
@@ -48,6 +49,8 @@
 .youWantTo-Marketing-Phrase {
     font-family: var(--main-font, "Norse-Bold" sans-serif);
     align-self: flex-start;
+    display: inline;
+    width: 70%;
     font-size: 1.4rem;
     margin-top: 2px;
     margin-left: 46px;
@@ -55,18 +58,65 @@
 }
 
 .letsDoThisPara {
-    font-family: var(--main-font, "Norse-Bold", sans-serif);
+    font-family: var(--main-font, sans-serif);
+    font-size: 1.2rem;
+    margin-top: 8px;
+    margin-bottom: 8px;
 
 }
 
 .formContainer {
     outline: 2px solid blue;
     align-self: flex-start;
-    margin-left: 46px;
-    width: 70%;
+    /* margin-left: 46px; */
+    width: 100%;
+    padding-left: 46px;
+    padding: 16px 0px 16px 46px;
+    background-color: rgba(230, 230, 230, 0.845);
+   
+}
+
+.formWrapper {
+    justify-content: flex-start;
 }
 
 form {
     display: flex;
-    width: 70% ;
+    width: 70%;
+    /* gap: 36px; */
+    justify-items: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+
+input {
+    width: 225px;
+    height: 25px;
+}
+
+p.first-name-holder,
+p.last-name-holder,
+p.email-input-holder,
+p.phoneNum-input-holder,
+p.password-input-holder,
+p.pwdConfirmation-input-holder {
+    margin-bottom: 8px;
+    margin-top: 8px;
+
+}
+
+
+
+p {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+
+}
+
+p label {
+    font-family: var(--main-font, sans-serif);
+    font-size: 1.1rem;
 }
