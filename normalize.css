@@ -199,6 +199,8 @@ textarea {
     background: none;
     border: 1px solid grey;
     border-radius: 5px;
+    outline: none;
+    padding: 4px;
 }
 
 textarea {

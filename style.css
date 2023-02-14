@@ -3,36 +3,74 @@
     src: url(./fonts/Norse-Bold.otf) format("opentype");
 }
 
+body {
+    min-height: 100vh ;
+}
+
 :root {
     --main-font: "Norse-Bold", sans-serif;
+    font-size: 1.2rem;
 }
 
 .side-container-img {
-    display: flex;
-}
-
-
-.side-container-img img {
-    height: 100vh;
-    width: 35%;
-    object-fit: cover;
-    object-position: center;
-    background-size: 35%;
+  /*   width: 35%; */
+    background-image: url(./img/vail-background.jpg);
+    background-position: center top;
+    background-size: cover;
+    background-repeat: no-repeat;
     outline: 6px solid red;
-    flex: 1;
+    flex: 3;
+    display: flex;
+    align-items: center;
+}
 
+
+.main-wrapper {
+    display: flex;
+    height: 100vh;
+}
+
+.cardBody {
+    display: flex;
+    height: 200px;
+    background-color: black;
+    opacity: 60%;
+    /* position: fixed; */
+    width: 100%;
+    top: 16rem;
+    padding: 12px;
+    display: flex;
+    gap: 24px;
+    justify-content: center;
+    align-items: center;
 
 }
+
+.cardBody img {
+    width: auto;
+    height: 160px;
+}
+
+.cardBody p {
+    font-family: var(--main-font, sans-serif);
+    font-size: 6rem;
+    color: white;
+    align-self: center;
+
+}
+
+
+
 
 .rightSideContainer {
     display: flex;
     flex-direction: column;
     gap: 6px;
-    justify-content: flex-start;
+    justify-content: center;
     outline: 4px solid green;
     background-color: rgb(255, 255, 255);
     width: 65%;
-    height: 100vh;
+   /*  height: 100vh; */
     align-items: center;
 }
 
@@ -59,8 +97,8 @@
 
 .letsDoThisPara {
     font-family: var(--main-font, sans-serif);
-    font-size: 1.2rem;
-    margin-top: 8px;
+    font-size: 1.4rem;
+    margin-top: 30px;
     margin-bottom: 8px;
 
 }
@@ -71,14 +109,15 @@
     /* margin-left: 46px; */
     width: 100%;
     padding-left: 46px;
-    padding: 16px 0px 16px 46px;
+    padding: 0px 0px 0px 46px;
     background-color: rgba(230, 230, 230, 0.845);
-   
-}
-
-.formWrapper {
+   /*  height: 30vh; */
+    display: flex;
+    flex-direction: column;
     justify-content: flex-start;
 }
+
+
 
 form {
     display: flex;
@@ -88,12 +127,19 @@ form {
     align-items: center;
     flex-wrap: wrap;
     justify-content: space-between;
+    gap: 16px;
+    height: 20vh;
+    outline: 1px solid orange;
 }
+
+
 
 
 input {
     width: 225px;
     height: 25px;
+    background: none;
+    outline: none;
 }
 
 p.first-name-holder,
@@ -118,5 +164,5 @@ p {
 
 p label {
     font-family: var(--main-font, sans-serif);
-    font-size: 1.1rem;
+    font-size: 1.2rem
 }
