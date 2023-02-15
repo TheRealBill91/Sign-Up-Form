@@ -15,9 +15,9 @@
         <div class="side-container-img" alt="A landscape picture of Vail">
             <!-- <img src="./img/vail-background.jpg" , Colorado"> -->
             <div class="cardBody">
-                <img src="https://cdn.statically.io/gh/TheOdinProject/curriculum/5f37d43908ef92499e95a9b90fc3cc291a95014c/html_css/project-sign-up-form/odin-lined.png"
+                <img src="https://cdn.pixabay.com/photo/2012/04/24/18/10/snowboard-40737_960_720.png"
                     alt="Picture of the Odin Project logo, a mythical guy with a beard">
-                <p>Odin</p>
+                <p>Sign-Up Form</p>
             </div>
             <p>Photo by <a
                     href="https://unsplash.com/@katie_musial?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Katie
@@ -28,7 +28,7 @@
         </div>
         <div class="rightSideContainer">
             <p class="signUp-Marketing-Phrase">
-                We get it, you probavbly get asked this a lot on the internet. But this sign up is truly worth it.
+                We get it, you probably get asked this a lot on the internet. But this sign up is truly worth it.
                 Sign up, and you will not regret it.
             </p>
             <p class="youWantTo-Marketing-Phrase">
@@ -41,31 +41,38 @@
                 <form>
                     <p class="first-name-holder">
                         <label for="first-name">First Name</label>
-                        <input id="first-name" type="text" name="first-name">
+                        <input id="first-name" type="text" title="Please enter your first name" name="first-name"
+                            required>
                     </p>
                     <p class="last-name-holder">
                         <label for="last-name">Last Name</label>
-                        <input type="text" type="text" name="last-name">
+                        <input id="last-name" type="text" title="Please enter your last name" type="text"
+                            name="last-name" required>
                     </p>
                     <p class="email-input-holder">
                         <label for="email">Email</label>
-                        <input id="email" name="email" type="email">
+                        <input id="email" title="Please enter a valid email (johnDoe@aol.com)" name="email" type="email"
+                            required>
                     </p>
                     <p class="phoneNum-input-holder">
                         <label for="phoneNum">Phone Number</label>
-                        <input type="tel" id="phoneNum" name="phoneNum">
+                        <input type="tel" id="phoneNum" title="Please enter a valid phone number (356-464-3455)"
+                            name="phoneNum" required>
                     </p>
                     <p class="password-input-holder">
-                        <label for="password">Password</label>
-                        <input type="password" id="password" name="password">
+                        <label for="password">Password*</label>
+                        <input class="error" type="password" minlength="8" id="password" name="password" required>
                     </p>
                     <p class="pwdConfirmation-input-holder">
-                        <label for="pwdConfirmation">Confirm Password</label>
-                        <input type="password" id="pwdConfirmation" name="pwdConfirmation">
+                        <label for="pwdConfirmation">Confirm Password*</label>
+                        <input class="error" type="password" minlength="8" id="pwdConfirmation" name="pwdConfirmation"
+                            required>
                     </p>
             </div>
-            <button class="submit-button" type="submit">Create Account</button>
+            <button class="submit-button" type="submit">Create Account <a href="index.html"></a></button>
             </form>
+            <p class="login">Already have an account? <a href="index.html">Log in</a></p>
+
 
         </div>
     </div>
