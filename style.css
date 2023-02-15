@@ -81,7 +81,7 @@
 
 .cardBody p {
     font-family: var(--logo-font, sans-serif);
-    font-size: 5rem;
+    font-size: clamp(2.5rem, 4vw, 6rem);
     color: white;
     align-self: center;
 
@@ -133,7 +133,7 @@
 }
 
 .inputContainer {
-   /*  outline: 2px solid blue; */
+    /*  outline: 2px solid blue; */
     align-self: flex-start;
     /* max-width: 100%; */
     width: 100%;
