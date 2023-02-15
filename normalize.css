@@ -175,6 +175,12 @@ img {
    * 2. Remove the margin in Firefox and Safari.
    */
 
+
+input {
+    -webkit-appearance: none;
+}
+
+
 button,
 input,
 optgroup,
