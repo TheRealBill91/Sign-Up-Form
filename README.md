@@ -1,9 +1,9 @@
-#Live Demo
+# Live Demo
 https://therealbill91.github.io/Sign-Up-Form/
 
 
 
-#Picture credits
+# Picture credits
 Vail backgroud:
 https://unsplash.com/photos/Gk-cKDPhwmg
 
